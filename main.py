@@ -37,7 +37,8 @@ def check_policy(password):
 
     if password == "":
         add_label("Please enter a password", "purple")
-        return set_progress_bar(0)
+        set_progress_bar(0)
+        return
 
     if len(password) >= 12:
         score += 1
@@ -64,7 +65,7 @@ def check_policy(password):
     else:
         suggestion_list.append("Include special characters in password")
 
-    if password not in password_list("./100k-most-used-passwords-NCSC.txt"):
+    if password not in password_list("100k-most-used-passwords-NCSC.txt"):
         score += 1   
     else:
         suggestion_list.append("Make your password more complex")
