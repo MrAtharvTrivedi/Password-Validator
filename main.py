@@ -64,7 +64,7 @@ def check_policy(password):
     else:
         suggestion_list.append("Include special characters in password")
 
-    if password not in password_list("100k-most-used-passwords-NCSC.txt"):
+    if password not in password_list("./100k-most-used-passwords-NCSC.txt"):
         score += 1   
     else:
         suggestion_list.append("Make your password more complex")
@@ -79,7 +79,6 @@ def check_policy(password):
 
 app = customtkinter.CTk()
 app.geometry("500x400")
-# app.iconbitmap()
 app.title("Password Policy Checker")
 app.resizable(0,0)
 
