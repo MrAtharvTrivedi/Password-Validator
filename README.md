@@ -2,6 +2,10 @@
 
 A GUI-based password strength analyzer built with Python and CustomTkinter. The application evaluates password security based on industry-standard password policy requirements and provides actionable recommendations to help users create stronger credentials.
 
+## Screenshots
+![Password-Validator](images/src-1.png)
+![Password-Validator](images/src-2.png)
+
 ## Features
 
 * Password strength scoring system
